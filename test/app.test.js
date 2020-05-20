@@ -1,5 +1,5 @@
-const app = require('../app.js');
-const getFile = app.modGetFile;
+const {getFile,readFile} = require('../app.js');
+//const getFile = app.modGetFile;
 // const readFile = app.modReadFile;
 describe('validate module getFile', ()=>{
     it('getFile is a function', ()=>{
