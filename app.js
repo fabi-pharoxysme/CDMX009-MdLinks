@@ -7,14 +7,18 @@ function getFile () {
  readFile(url);
  return console.log(url);
 }
-module.exports.modGetFile = getFile;
-getFile();
-console.log(getFile)
+
+//getFile();
+
 // Read file 
 function readFile (url) {
   const read = file.readFileSync( url, 'utf-8')
   console.log(read)
   return read;
 }
-module.exports.modReadFile = readFile;
+
 // Validate as markdown file 
+module.exports={
+  getFile,
+  readFile,
+}
